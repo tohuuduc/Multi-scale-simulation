@@ -1,0 +1,21 @@
+// Std Lib
+#include <iostream>
+#include <stdlib.h>
+
+// MechSys
+#include <mechsys/lib/lbm/Domain.h>
+// CImg
+#include <lib/img/CImg/CImg.h>
+
+using std::cout;
+using std::endl;
+
+using namespace cimg_library;
+using namespace DEM;
+
+int main(int argc, char ** argv)try
+{
+	CImg<float> image("input.jpg");
+	image.save("test.jpg");
+}
+MECHSYS_CATCH

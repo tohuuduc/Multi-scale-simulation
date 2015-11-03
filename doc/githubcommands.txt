@@ -1,0 +1,27 @@
+=========install github===============
+    sudo apt-get update
+    sudo apt-get install git
+OR
+    sudo apt-get update
+    sudo apt-get install build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip
+
+=========clone project================
+
+    git clone https://github.com/tohuuduc/MSS-sandbox.git
+
+=========update from repo=============
+
+    git pull origin master
+
+=========commit and push back=========
+ADD FILES AND DIRECTORIES
+    git add <file>
+    git add <directory>
+    git add -p
+
+COMMIT
+    git commit
+    git commit -m "<message>"
+
+PUSH
+    git push -u origin master

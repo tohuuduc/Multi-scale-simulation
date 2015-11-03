@@ -18,6 +18,7 @@
 
 SET(PROGS
     dam
+    flow
 )
 
 FOREACH(var ${PROGS})

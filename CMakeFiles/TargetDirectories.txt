@@ -1,3 +1,5 @@
 /home/to6/Multi-scale-simulation/test/lbm/CMakeFiles/dam.dir
+/home/to6/Multi-scale-simulation/test/lbm/CMakeFiles/flow.dir
+/home/to6/Multi-scale-simulation/test/CMakeFiles/test1.dir
 /home/to6/Multi-scale-simulation/test/dem/CMakeFiles/test_distances.dir
 /home/to6/Multi-scale-simulation/test/dem/CMakeFiles/ttt.dir

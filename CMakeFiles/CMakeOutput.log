@@ -530,3 +530,93 @@ int main() {
 #endif
 }
 
+Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
+Change Dir: /home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1831554539/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1831554539.dir/build.make CMakeFiles/cmTryCompileExec1831554539.dir/build
+make[1]: Entering directory `/home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1831554539.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fopenmp -fopenmp -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec1831554539.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1831554539
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1831554539.dir/link.txt --verbose=1
+/usr/bin/cc   -fopenmp -fopenmp -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTryCompileExec1831554539.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1831554539 -rdynamic -lX11 -lXext 
+make[1]: Leaving directory `/home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1011818383/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1011818383.dir/build.make CMakeFiles/cmTryCompileExec1011818383.dir/build
+make[1]: Entering directory `/home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1011818383.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fopenmp -fopenmp -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec1011818383.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1011818383
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1011818383.dir/link.txt --verbose=1
+/usr/bin/cc   -fopenmp -fopenmp -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec1011818383.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1011818383 -rdynamic 
+make[1]: Leaving directory `/home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp'
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2938140531/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2938140531.dir/build.make CMakeFiles/cmTryCompileExec2938140531.dir/build
+make[1]: Entering directory `/home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2938140531.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fopenmp -fopenmp -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec2938140531.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2938140531
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2938140531.dir/link.txt --verbose=1
+/usr/bin/cc   -fopenmp -fopenmp -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec2938140531.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2938140531 -rdynamic 
+make[1]: Leaving directory `/home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp'
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3497224858/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3497224858.dir/build.make CMakeFiles/cmTryCompileExec3497224858.dir/build
+make[1]: Entering directory `/home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3497224858.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fopenmp -fopenmp -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec3497224858.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3497224858
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3497224858.dir/link.txt --verbose=1
+/usr/bin/cc   -fopenmp -fopenmp -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTryCompileExec3497224858.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3497224858 -rdynamic 
+make[1]: Leaving directory `/home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp'
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1767934223/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1767934223.dir/build.make CMakeFiles/cmTryCompileExec1767934223.dir/build
+make[1]: Entering directory `/home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1767934223.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fopenmp -fopenmp -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec1767934223.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1767934223
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1767934223.dir/link.txt --verbose=1
+/usr/bin/cc   -fopenmp -fopenmp -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTryCompileExec1767934223.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1767934223 -rdynamic 
+make[1]: Leaving directory `/home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp'
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1590522201/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1590522201.dir/build.make CMakeFiles/cmTryCompileExec1590522201.dir/build
+make[1]: Entering directory `/home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1590522201.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fopenmp -fopenmp -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec1590522201.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1590522201
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1590522201.dir/link.txt --verbose=1
+/usr/bin/cc   -fopenmp -fopenmp -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec1590522201.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1590522201 -rdynamic -lICE 
+make[1]: Leaving directory `/home/to6/Multi-scale-simulation/CMakeFiles/CMakeTmp'
+
+

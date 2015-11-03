@@ -22,7 +22,7 @@ ENABLE_TESTING         ()
 
 # Features                                                                         
 OPTION(A_WITH_PYTHON_MODULE "Create python module (mechsys)" OFF)
-OPTION(A_WITH_TEST          "Compile general tests"          OFF)
+OPTION(A_WITH_TEST          "Compile general tests"          ON)
 OPTION(A_WITH_TFEM          "Compile FEM tests"              OFF)
 OPTION(A_WITH_TLBM          "Compile LBM tests"              ON )
 OPTION(A_WITH_TADLBM        "Compile ADLBM tests"            OFF)
@@ -30,6 +30,7 @@ OPTION(A_WITH_TDEM          "Compile DEM tests"              ON )
 OPTION(A_WITH_TSPH          "Compile SPH tests"              OFF)
 OPTION(A_WITH_TMPM          "Compile MPM tests"              OFF)
 OPTION(A_WITH_TDOC          "Compile documentation tests"    OFF)
+
 
 # needed when building Debian package
 IF(NOT INSTALL_ROOT)
@@ -40,16 +41,11 @@ INCLUDE_DIRECTORIES (${MSS_SOURCE_DIR})
 #INCLUDE_DIRECTORIES ($ENV{HOME}/pkg/boost_1_49_0)
 
 ### DEPENDENCIES ########################################################################################
-INCLUDE (${MSS_SOURCE_DIR}/UseMECHSYS.cmake)
-if(MECHSYS_FOUND)
-    INCLUDE (${MECHSYS_SOURCE_DIR}/Modules/FindDEPS.cmake)
-    if(NOT DEPS_OK)
-#       MESSAGE("Not all dependencies were satisfied")
-    endif(NOT DEPS_OK)
-    INCLUDE_DIRECTORIES (${MECHSYS_INCLUDE_DIRS})
-else(MECHSYS_FOUND)
-    MESSAGE("This project requires MechSys")
-endif(MECHSYS_FOUND)
+INCLUDE (${MSS_SOURCE_DIR}/Modules/FindOUTSOURCES.cmake)
+if(MISSING)
+    MESSAGE("Missing dependencies =${MISSING}")
+endif(MISSING)
+
 ### PYTHON MODULE #######################################################################################
 
 if(A_WITH_PYTHON_MODULE)

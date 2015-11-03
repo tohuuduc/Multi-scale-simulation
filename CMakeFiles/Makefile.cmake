@@ -12,8 +12,11 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/2.8.12.2/CMakeFortranCompiler.cmake"
   "CMakeFiles/2.8.12.2/CMakeSystem.cmake"
   "CMakeLists.txt"
-  "UseMECHSYS.cmake"
+  "Modules/FindCIMG.cmake"
+  "Modules/FindMECHSYS.cmake"
+  "Modules/FindOUTSOURCES.cmake"
   "src/CMakeLists.txt"
+  "test/CMakeLists.txt"
   "test/dem/CMakeLists.txt"
   "test/lbm/CMakeLists.txt"
   "/home/to6/mechsys/Modules/FindBLITZ.cmake"
@@ -63,6 +66,7 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-2.8/Modules/FindPackageMessage.cmake"
   "/usr/share/cmake-2.8/Modules/FindThreads.cmake"
   "/usr/share/cmake-2.8/Modules/FindVTK.cmake"
+  "/usr/share/cmake-2.8/Modules/FindX11.cmake"
   "/usr/share/cmake-2.8/Modules/FindwxWidgets.cmake"
   "/usr/share/cmake-2.8/Modules/GetPrerequisites.cmake"
   "/usr/share/cmake-2.8/Modules/Platform/Linux-GNU-C.cmake"
@@ -84,13 +88,16 @@ SET(CMAKE_MAKEFILE_OUTPUTS
 SET(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/lbm/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/dem/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
+  "test/CMakeFiles/test1.dir/DependInfo.cmake"
   "test/lbm/CMakeFiles/dam.dir/DependInfo.cmake"
+  "test/lbm/CMakeFiles/flow.dir/DependInfo.cmake"
   "test/dem/CMakeFiles/test_distances.dir/DependInfo.cmake"
   "test/dem/CMakeFiles/ttt.dir/DependInfo.cmake"
   )

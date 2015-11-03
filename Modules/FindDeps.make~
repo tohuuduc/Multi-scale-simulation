@@ -1,0 +1,34 @@
+########################################################################
+# Multi-Scale-Simulation - Open Library for Mechanical Systems         #
+# Copyright (C) 2015 Huu Duc To, Elliot Carr, Ian Turner               #
+#                                                                      #
+# This program is free software: you can redistribute it and/or modify #
+# it under the terms of the GNU General Public License as published by #
+# the Free Software Foundation, either version 3 of the License, or    #
+# any later version.                                                   #
+#                                                                      #
+# This program is distributed in the hope that it will be useful,      #
+# but WITHOUT ANY WARRANTY; without even the implied warranty of       #
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the         #
+# GNU General Public License for more details.                         #
+#                                                                      #
+# You should have received a copy of the GNU General Public License    #
+# along with this program. If not, see <http://www.gnu.org/licenses/>  #
+########################################################################
+
+# Flags
+OPTION(A_MAKE_VERBOSE       "Show additional messages during compilation/linking?" ON )
+OPTION(A_MAKE_ALL_WARNINGS  "Make with all warnings (-Wall)"                       ON )
+OPTION(A_MAKE_DEBUG_SYMBOLS "Make with debug symbols (-g)"                         OFF)
+OPTION(A_MAKE_PROFILING     "Make with profiling information (-pg)"                OFF)
+OPTION(A_MAKE_OPTIMIZED     "Make optimized (-O3)"                                 ON )
+OPTION(A_MAKE_WXW_MONO      "Use wxWidgets monolithic libraries ?"                 OFF)
+OPTION(A_MAKE_TERM_WHITEBG  "Select colors for terminal with white background ?"   OFF)
+OPTION(A_MAKE_TERM_NOCOLORS "Don't use colors when printing to terminal ?"         OFF)
+OPTION(A_MAKE_STDVECTOR     "Use std::vector instead of own implemenatation ?"     ON )
+OPTION(A_MAKE_CHECK_OVERLAP "Check for maximun overlapping in DEM simulations"     Off )
+                                                                                   
+# Options                                                                          
+OPTION(A_USE_MECHSYS        "Use MECHSYS                           		   ON)
+
+

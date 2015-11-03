@@ -16,9 +16,6 @@ SUFFIXES =
 
 .SUFFIXES: .hpux_make_needs_suffix_list
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -128,6 +125,20 @@ dam/fast:
 	cd /home/to6/Multi-scale-simulation && $(MAKE) -f test/lbm/CMakeFiles/dam.dir/build.make test/lbm/CMakeFiles/dam.dir/build
 .PHONY : dam/fast
 
+# Convenience name for target.
+test/lbm/CMakeFiles/flow.dir/rule:
+	cd /home/to6/Multi-scale-simulation && $(MAKE) -f CMakeFiles/Makefile2 test/lbm/CMakeFiles/flow.dir/rule
+.PHONY : test/lbm/CMakeFiles/flow.dir/rule
+
+# Convenience name for target.
+flow: test/lbm/CMakeFiles/flow.dir/rule
+.PHONY : flow
+
+# fast build rule for target.
+flow/fast:
+	cd /home/to6/Multi-scale-simulation && $(MAKE) -f test/lbm/CMakeFiles/flow.dir/build.make test/lbm/CMakeFiles/flow.dir/build
+.PHONY : flow/fast
+
 dam.o: dam.cpp.o
 .PHONY : dam.o
 
@@ -152,6 +163,30 @@ dam.cpp.s:
 	cd /home/to6/Multi-scale-simulation && $(MAKE) -f test/lbm/CMakeFiles/dam.dir/build.make test/lbm/CMakeFiles/dam.dir/dam.cpp.s
 .PHONY : dam.cpp.s
 
+flow.o: flow.cpp.o
+.PHONY : flow.o
+
+# target to build an object file
+flow.cpp.o:
+	cd /home/to6/Multi-scale-simulation && $(MAKE) -f test/lbm/CMakeFiles/flow.dir/build.make test/lbm/CMakeFiles/flow.dir/flow.cpp.o
+.PHONY : flow.cpp.o
+
+flow.i: flow.cpp.i
+.PHONY : flow.i
+
+# target to preprocess a source file
+flow.cpp.i:
+	cd /home/to6/Multi-scale-simulation && $(MAKE) -f test/lbm/CMakeFiles/flow.dir/build.make test/lbm/CMakeFiles/flow.dir/flow.cpp.i
+.PHONY : flow.cpp.i
+
+flow.s: flow.cpp.s
+.PHONY : flow.s
+
+# target to generate assembly for a file
+flow.cpp.s:
+	cd /home/to6/Multi-scale-simulation && $(MAKE) -f test/lbm/CMakeFiles/flow.dir/build.make test/lbm/CMakeFiles/flow.dir/flow.cpp.s
+.PHONY : flow.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -160,11 +195,15 @@ help:
 	@echo "... depend"
 	@echo "... dam"
 	@echo "... edit_cache"
+	@echo "... flow"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... dam.o"
 	@echo "... dam.i"
 	@echo "... dam.s"
+	@echo "... flow.o"
+	@echo "... flow.i"
+	@echo "... flow.s"
 .PHONY : help
 
 

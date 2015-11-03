@@ -24,9 +24,6 @@ SUFFIXES =
 
 .SUFFIXES: .hpux_make_needs_suffix_list
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -74,14 +71,66 @@ src/preinstall:
 .PHONY : src/preinstall
 
 #=============================================================================
+# Directory level rules for directory test
+
+# Convenience name for "all" pass in the directory.
+test/all: test/CMakeFiles/test1.dir/all
+.PHONY : test/all
+
+# Convenience name for "clean" pass in the directory.
+test/clean: test/CMakeFiles/test1.dir/clean
+.PHONY : test/clean
+
+# Convenience name for "preinstall" pass in the directory.
+test/preinstall:
+.PHONY : test/preinstall
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/test1.dir
+
+# All Build rule for target.
+test/CMakeFiles/test1.dir/all:
+	$(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/depend
+	$(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/to6/Multi-scale-simulation/CMakeFiles  3
+	@echo "Built target test1"
+.PHONY : test/CMakeFiles/test1.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/test1.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/test1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/to6/Multi-scale-simulation/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/to6/Multi-scale-simulation/CMakeFiles 0
+.PHONY : test/CMakeFiles/test1.dir/rule
+
+# Convenience name for target.
+test1: test/CMakeFiles/test1.dir/rule
+.PHONY : test1
+
+# clean rule for target.
+test/CMakeFiles/test1.dir/clean:
+	$(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/clean
+.PHONY : test/CMakeFiles/test1.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/test1.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory test/lbm
 
 # Convenience name for "all" pass in the directory.
 test/lbm/all: test/lbm/CMakeFiles/dam.dir/all
+test/lbm/all: test/lbm/CMakeFiles/flow.dir/all
 .PHONY : test/lbm/all
 
 # Convenience name for "clean" pass in the directory.
 test/lbm/clean: test/lbm/CMakeFiles/dam.dir/clean
+test/lbm/clean: test/lbm/CMakeFiles/flow.dir/clean
 .PHONY : test/lbm/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -124,6 +173,41 @@ clean: test/lbm/CMakeFiles/dam.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target test/lbm/CMakeFiles/flow.dir
+
+# All Build rule for target.
+test/lbm/CMakeFiles/flow.dir/all:
+	$(MAKE) -f test/lbm/CMakeFiles/flow.dir/build.make test/lbm/CMakeFiles/flow.dir/depend
+	$(MAKE) -f test/lbm/CMakeFiles/flow.dir/build.make test/lbm/CMakeFiles/flow.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/to6/Multi-scale-simulation/CMakeFiles  2
+	@echo "Built target flow"
+.PHONY : test/lbm/CMakeFiles/flow.dir/all
+
+# Include target in all.
+all: test/lbm/CMakeFiles/flow.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/lbm/CMakeFiles/flow.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/to6/Multi-scale-simulation/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 test/lbm/CMakeFiles/flow.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/to6/Multi-scale-simulation/CMakeFiles 0
+.PHONY : test/lbm/CMakeFiles/flow.dir/rule
+
+# Convenience name for target.
+flow: test/lbm/CMakeFiles/flow.dir/rule
+.PHONY : flow
+
+# clean rule for target.
+test/lbm/CMakeFiles/flow.dir/clean:
+	$(MAKE) -f test/lbm/CMakeFiles/flow.dir/build.make test/lbm/CMakeFiles/flow.dir/clean
+.PHONY : test/lbm/CMakeFiles/flow.dir/clean
+
+# clean rule for target.
+clean: test/lbm/CMakeFiles/flow.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory test/dem
 
 # Convenience name for "all" pass in the directory.
@@ -147,7 +231,7 @@ test/dem/preinstall:
 test/dem/CMakeFiles/test_distances.dir/all:
 	$(MAKE) -f test/dem/CMakeFiles/test_distances.dir/build.make test/dem/CMakeFiles/test_distances.dir/depend
 	$(MAKE) -f test/dem/CMakeFiles/test_distances.dir/build.make test/dem/CMakeFiles/test_distances.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/to6/Multi-scale-simulation/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/to6/Multi-scale-simulation/CMakeFiles  4
 	@echo "Built target test_distances"
 .PHONY : test/dem/CMakeFiles/test_distances.dir/all
 
@@ -182,7 +266,7 @@ clean: test/dem/CMakeFiles/test_distances.dir/clean
 test/dem/CMakeFiles/ttt.dir/all:
 	$(MAKE) -f test/dem/CMakeFiles/ttt.dir/build.make test/dem/CMakeFiles/ttt.dir/depend
 	$(MAKE) -f test/dem/CMakeFiles/ttt.dir/build.make test/dem/CMakeFiles/ttt.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/to6/Multi-scale-simulation/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/to6/Multi-scale-simulation/CMakeFiles  5
 	@echo "Built target ttt"
 .PHONY : test/dem/CMakeFiles/ttt.dir/all
 

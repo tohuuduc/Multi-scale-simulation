@@ -16,9 +16,6 @@ SUFFIXES =
 
 .SUFFIXES: .hpux_make_needs_suffix_list
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -115,6 +112,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test1
+
+# Build rule for target.
+test1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test1
+.PHONY : test1
+
+# fast build rule for target.
+test1/fast:
+	$(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/build
+.PHONY : test1/fast
+
+#=============================================================================
 # Target rules for targets named dam
 
 # Build rule for target.
@@ -126,6 +136,19 @@ dam: cmake_check_build_system
 dam/fast:
 	$(MAKE) -f test/lbm/CMakeFiles/dam.dir/build.make test/lbm/CMakeFiles/dam.dir/build
 .PHONY : dam/fast
+
+#=============================================================================
+# Target rules for targets named flow
+
+# Build rule for target.
+flow: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 flow
+.PHONY : flow
+
+# fast build rule for target.
+flow/fast:
+	$(MAKE) -f test/lbm/CMakeFiles/flow.dir/build.make test/lbm/CMakeFiles/flow.dir/build
+.PHONY : flow/fast
 
 #=============================================================================
 # Target rules for targets named test_distances
@@ -162,7 +185,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... test1"
 	@echo "... dam"
+	@echo "... flow"
 	@echo "... test_distances"
 	@echo "... ttt"
 .PHONY : help
